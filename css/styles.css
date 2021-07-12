@@ -1,0 +1,77 @@
+/*----------------------------------------
+
+
+Index.html Page Styling
+
+
+-----------------------------------------*/
+@font-face {
+  font-family: 'bluehonest';
+  src: url('../fonts/bluehonest.ttf')format('truetype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header{
+  background: pink;
+  padding: 1rem;
+}
+
+header{
+  text-align: center;
+}
+
+li{
+  display: inline-block;
+  width: 400px;
+}
+
+h1{
+  font-family: 'bluehonest';
+  font-size: 60px;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: .5rem
+
+}
+h2{
+  color: pink;
+}
+
+p{
+  color: black;
+  line-height: 1.5em;
+  font-family: 'Raleway' , sans-serif;
+  font-size: 16px;
+  }
+
+body{
+  background-image: url('../image/background-pattern.png');
+  background-repeat: repeat;
+}
+
+main{
+  background-color: white;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 6rem;
+  border: 3px solid lightblue;
+}
+
+img {
+  width: 200px;
+  float: left;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+  footer{
+  background: pink;
+  text-align: center;
+  color: white;
+  padding: 4rem 0;
+}
