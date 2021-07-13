@@ -1,58 +1,31 @@
 /*----------------------------------------
 
 
-Index.html Page Styling
+Universal Styling
 
 
 -----------------------------------------*/
-@font-face {
-  font-family: 'bluehonest';
-  src: url('../fonts/bluehonest.ttf')format('truetype');
-}
-
 *{
   margin: 0;
   padding: 0;
   border: 0;
 }
-
-header{
-  background: pink;
-  padding: 1rem;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
+@font-face {
+  font-family: 'bluehonest';
+  src: url('../fonts/bluehonest.ttf')format('truetype');
 }
-
-main{
-  background-color: white;
-  max-width: 1000px;
-  height: 800px;
-  margin: 0 auto;
-  padding: 6rem;
-  padding-top: 180px;
-  border: 3px solid lightblue;
-  display: block;
-}
-
-li{
-  display: inline-block;
-  width: 400px;
-}
-
 h1{
   font-family: 'bluehonest';
   font-size: 60px;
   text-align: center;
   text-decoration: underline;
   letter-spacing: .5rem
-
 }
 h2{
   color: pink;
+  margin-bottom: 10px;
+  text-align: left
 }
-
 p{
   color: black;
   line-height: 1.5em;
@@ -60,13 +33,88 @@ p{
   font-size: 16px;
   margin: 20px 0;
   }
-
+li a{
+  color: lightpink;
+  line-height: .5em;
+  font-family: 'Raleway' , sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0;
+}
 body{
   background-image: url('../image/background-pattern.png');
   background-repeat: repeat;
 }
+span{
+  font-weight: bold;
+}
+/*----------------------------------------
 
-img {
+
+Header Styling
+
+
+-----------------------------------------*/
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: pink;
+  padding: 1rem;
+  text-align: center;
+  z-index: 99;
+}
+header nav{
+  margin-left: 80px;
+}
+header a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+header li{
+  display: inline-block;
+  width: 400px;
+}
+/*----------------------------------------
+
+
+Body Styling
+
+
+-----------------------------------------*/
+main.container{
+  max-width: 800px;
+  margin: 0 auto;
+  height: 1200px;
+  padding: 6rem;
+  padding-top: 180px;
+  background-color: white;
+  border: 3px solid lightblue;
+  display: block;
+}
+section{
+  margin: 10px 0px;
+}
+
+/*----------------------------------------
+
+
+Positioning Styling
+
+
+-----------------------------------------*/
+.text-image-container{
+  position: relative;
+}
+
+.text-container{
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+
+div.vanessa img {
   width: 220px;
   float: left;
   margin: 0 30px 20px 0;
@@ -74,6 +122,26 @@ img {
   padding: 8px;
 }
 
+section.festival ol{
+  text-align: left;
+}
+
+section.placesvisited{
+  float: right;
+}
+section.placesvisited ul{
+  text-align: left;
+}
+
+
+
+/*----------------------------------------
+
+
+Footer Styling
+
+
+-----------------------------------------*/
 footer{
   background: pink;
   text-align: center;
@@ -83,8 +151,4 @@ footer{
   width: 100%;
   height: 80px;
   bottom: 0;
-}
-
-span{
-  font-weight: bold;
 }
